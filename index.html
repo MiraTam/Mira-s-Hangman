@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="answerBoxes">
+          <h1 id="singleLetter">-</h1>
+        </div>
+        <div class="keybord">
+          <button class="letter">A</button>
+          <button class="letter">B</button>
+          <button class="letter">C</button>
+          <button class="letter">D</button>
+          <button class="letter">E</button>
+          <button class="letter">F</button>
+          <button class="letter">G</button>
+          <button class="letter">H</button>
+          <button class="letter">I</button>
+          <button class="letter">J</button>
+          <button class="letter">K</button>
+          <button class="letter">L</button>
+          <button class="letter">M</button>
+          <button class="letter">N</button>
+          <button class="letter">O</button>
+          <button class="letter">P</button>
+          <button class="letter">Q</button>
+          <button class="letter">R</button>
+          <button class="letter">S</button>
+          <button class="letter">T</button>
+          <button class="letter">U</button>
+          <button class="letter">V</button>
+          <button class="letter">W</button>
+          <button class="letter">X</button>
+          <button class="letter">Y</button>
+          <button class="letter">Z</button>
+        </div>
+      </div>
+      <div class="right">
+        <img id="hangmanPicture" src="images/initial.png" alt="" />
+        <div class="notificationBox">
+          <h1 class="displayRemaining">
+            Lives remaining : <span class="lives">9</span>
+          </h1>
+          <p class="notification"></p>
+        </div>
+
+        <button class="reset" onclick="startNewGame()">Reset Game</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
